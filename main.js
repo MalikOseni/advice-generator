@@ -1,0 +1,18 @@
+const adviceSpace = document.getElementById('adviceSlip');
+const Btn = document.getElementById('switchBtn');
+const superHero = () => {
+    fetch('	https://api.adviceslip.com/advice')
+        .then(response => response.json())
+        .then(json => {
+        adviceSpace.innerText=`${json.slip.advice}`
+            // console.log(json.slip.advice)
+            const text = adviceSpace.innerText;
+            console.log(`text:${text}`)
+            const speech = new SpeechSynthesisUtterance(text);
+            speech.pitch = 2;
+
+            window.speechSynthesis.speak(speech);
+    })
+}
+superHero()
+Btn.addEventListener('click', () => superHero());

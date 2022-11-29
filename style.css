@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: darkolivegreen;
+    display: grid;
+    place-content: center;
+    margin: auto;
+}
+
+.wrapper{
+    min-height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background: darkorange;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advice{
+    width: 200px;
+    background-color: aqua;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+.adviceBtn{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    outline: 0;
+    border: 0;
+}
