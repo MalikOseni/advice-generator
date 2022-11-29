@@ -9,7 +9,6 @@ const superHero = () => {
         adviceSpace.innerText=`${json.slip.advice}`
             // console.log(json.slip.advice)
             const text = adviceSpace.innerText;
-            console.log(`text:${text}`)
             const speech = new SpeechSynthesisUtterance(text);
             speech.pitch = 20;
 
